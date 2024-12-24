@@ -1,0 +1,155 @@
+body{
+    background-color: rgb(62, 170, 62);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+*{
+    box-sizing: border-box;
+}
+p{
+    margin: 0;
+}
+.mainconteiner{
+    width: 350px;
+    height: 350px;
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.5);
+}
+.box{
+    width: 190px;
+    height: 144px;
+    background-color: green;
+    position: relative;
+    border: 1px solid rgb(211, 55, 55);
+    /* overflow: hidden; */
+}
+.boxstripes1{
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    background-color: rgb(211, 55, 55);
+    left: 50%;
+    transform: translateX(-50%);
+}
+.boxstripes2{
+    position: absolute;
+    height: 30px;
+    width: 100%;
+    background-color: rgb(211, 55, 55);
+    top: 40%;
+    transform: translateY(-50%);
+}
+.cover{
+    width: 210px;
+    height: 50px;
+    background-color: green;
+    border-bottom: 1px solid black;
+    transform: translateY(20%);
+    z-index: 2;
+    position: relative;
+    /* animation: takeoff 3s linear forwards; */
+}
+.coverstripe{
+    height: 100%;
+    width: 30px;
+    position: absolute;
+    left:50%;
+    transform: translateX(-50%);
+    background-color:rgb(211, 55, 55) ;
+}
+@keyframes takeoff{
+    0%{
+        transform: rotate(0deg);
+        right: 0%;
+        top: 0%;
+    }
+    20%{
+        top: 0%;
+    }
+    40%{
+        top: 0%;
+    }
+    60%{
+        transform: rotate(-45deg);
+        top: 5%;
+    }
+    80%{
+        top: 10%;
+    }
+    100%{
+        transform: rotate(-90deg);
+        right: 33%;
+        top: 20%;
+    }
+}
+.naughty{
+    position: absolute;
+    height: 140px;
+    width: 146px;
+    background-color: rgb(194, 24, 24);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    /* animation: cardpopup 6s linear forwards; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: black;
+    font-size: smaller;
+    border: 1px solid black;
+}
+.nice{
+    position: absolute;
+    height: 140px;
+    width: 145px;
+    background-color: rgb(78, 194, 24);
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    /* animation: cardpopup 6s linear forwards ; */
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    border: 1px solid rgb(255, 255, 255);
+
+}
+@keyframes cardpopup{
+0%{
+  
+}
+33%{
+
+}
+66%{
+    bottom: 3px;
+}
+100%{
+    bottom: 145px;
+}
+}
+img{
+    margin:auto 0 ;
+    width: 100px;
+    height: 100px;
+}
+.button{
+    margin-right: 80px;
+    background-color: rgb(0, 161, 0);
+    border: none;
+    color: rgb(224, 0, 0);
+    font-family: sans-serif;
+    /* font-weight: bold; */
+    width: 180px;
+    height: 50px;
+    font-size: larger;
+    border-radius: 19px;
+}
