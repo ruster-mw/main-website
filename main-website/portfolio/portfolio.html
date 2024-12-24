@@ -3,40 +3,82 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="portfolio.css">
-    <script src="app.js"></script>
+    <title>My main page</title>
+    <link rel="stylesheet" href="portfoilio.css" type="text/css">
+    <script src="portfolio.js" defer></script>
 </head>
 <body>
-    <main class="mainbox">
-    <section class="mainsection">
-
-        <header class="header1" id="header1">
-            <h1>PORTFOLIO</h1> 
-        </header>
-        
-        <article class="cssarticle">
-            <button class="cssbutton"  id="css-button" onclick="hide()">CSS <div class="triangle1" id="triangle"></div></button>
-            <section class="css-websites" id="css-website">
-                <a href="" class="website1"></a>
-                <a href="" class="website2"></a>
-                <a href="" class="website3"></a>
-                <a href="" class="website4"></a>
+    <header id="anchor-aboutme">
+        <header class="main-header">
+            <section class="main-title">
+                <h1>Main Website</h1>
             </section>
-        </article>
-        
-    </section> 
-
-    <aside class="asidebox">
-        
-    <header class="header2">
-        <h2>search</h2>
+            <section class="anchor-links">
+                <a href="#anchor-aboutme" class="mainlinks">About me <div class="linkborder"></div></a>
+                <a href="" class="mainlinks">               Websites <div class="linkborder"></div></a>
+                <a href="" class="mainlinks">               Applications<div class="linkborder"></div></a>
+                <div class="menu-button">
+                    <button class="hamburger-button">
+                        <div class="button-stripes" id="btnstripe1"></div>
+                        <div class="button-stripes" id="btnstripe2"></div>
+                        <div class="button-stripes" id="btnstripe3"></div>
+                    </button>
+                    <div class="dropdowncontent">
+                        <a href="#anchor-aboutme">About me</a>
+                        <a href="">               Websites </a>
+                        <a href="">               Applications</a>
+                    </div>
+                </div>
+            </section>
+        </header>
     </header>
-    <nav class="navigation"><a href="#header1" class="csslink">fdsfsfsdfsd</a></nav>
-    </aside>
-    
+
+    <section class="herosection">
+        <section class="aboutmecard">
+             <div class="aboutme1stsection">
+                 <img src="rustlogo.png" alt="myPfp">
+                 <hr class="aboutmehr">
+                 <p class="aboutmep">
+                    Hi my name is Matthew, i am 15 years old and i live in Poland. I am a beginner software developer and this website is a collection of my biggest projects.
+                 </p>
+                 <p class="aboutmep" style="color: var(--orange);">Find/Contact me on:</p>
+             </div>
+             <div class="aboutme2ndsection">
+                <a href='https://github.com/ruster-mw' class="githublink"><div class="githubtooltip">Github</div></a>
+                <a href='mailto:mateuszwypior2000@gmail.com' class="mailink"><div class="mailtooltip">Email</div></a>
+             </div>
+        </section>
+    </section>
+    <section class="titlesection">
+        <h1>Projects</h1>
+        <hr>
+    </section>
+    <main>
+            <section id="websitesection">
+                <div  class="mainsectionstitle">Websites</div>
+                <hr class="mainsectionshr">
+                <a href="" class="websitecard">Tic-Tac-Toe</a>
+                <a href="" class="websitecard"></a>
+                <a href="" class="websitecard"></a>
+                <a href="" class="websitecard"></a>
+
+            </section>
+            
+            <section id="desktopappsection">
+                <div class="mainsectionstitle">Desktop applications</div>
+                <hr class="mainsectionshr">
+                <a href="" class="desktopappcard"></a>
+                <a href="" class="desktopappcard"></a>
+
+            </section>
+            <section id="mobileappsection">
+                <div class="mainsectionstitle">Mobile appliactions</div>
+                <hr class="mainsectionshr">
+                <a href="" class="mobileappcard"></a>
+            </section>
     </main>
+    <footer>
 
-
+    </footer>
 </body>
 </html>
