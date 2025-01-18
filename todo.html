@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>todo</title>
+    <link rel="stylesheet" href="todo.css">
+</head>
+<body>
+    <section class="notesection">
+        <div class="addnote">
+            <div class="addnotetext">Add a note <button class="noteclosebtn" onclick="hideNoteSection()"></button></div>
+            <div class="addnoteinputdiv">
+                <form action="" method="get" class="addForm">
+                    <input type="text" name="" id="addNoteInput">
+                </form>
+            </div>
+            <div class="addnotebuttondiv">
+                <button id="addnote" onclick="addNote()">add</button>
+            </div>
+        </div>
+        <div class="addnoteborder"></div>
+    </section>
+
+    <main>
+        <header>to-do list</header>
+        <section class="searchsection">
+
+                <form action="" class="searchForm">
+                    <input type="text" placeholder="search" id="searchbar">
+                </form>
+
+            <button class="addButton" onclick="showNoteSection()">add 
+            <div class="plus">
+                <div class="horizontal"></div>
+                <div class="vertical"></div>
+            </div>
+            </button>
+        </section>
+        <section class="tasksection">
+            <ul id="tasklist">
+                <li class="task">
+                    <div class="statusdiv" id="dishes"><div class="statussign"></div></div>
+                    <span class="taskname">do the dishes</span>
+                    <button class="delete"><div class="X"></div></button>
+                </li>
+                <li class="task">
+                    <div class="statusdiv" id="conquer"><div class="statussign"></div></div>
+                    <span class="taskname">conquer monte casino</span>
+                    <button class="delete"><div class="X"></div></button>
+                </li>
+                <li class="task">
+                    <div class="statusdiv" id="learn"><div class="statussign"></div></div>
+                    <span class="taskname">learn JS</span>
+                    <button class="delete"><div class="X"></div></button>
+                </li>
+            </ul>
+        </section>
+    </main>
+    
+     
+    <script src="todo.js"></script>
+</body>
+</html>
